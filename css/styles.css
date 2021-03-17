@@ -1,0 +1,597 @@
+/* kierstin gray consulting website v10 - 2021 
+
+This is the CSS for creating the design for the new Kierstin Gray Consulting site.
+
+*/
+
+/* responsive queries */
+
+@media(min-width:1100px) {
+    .hideshow1 {
+        display: none !important;
+    }
+}
+
+@media(max-width:1100px) {
+    .hide1 {
+        display: block !important;
+    }
+
+    .hide2 {
+        display: none !important;
+    }
+
+    .blko-thin-txt li {
+        font-family: proxima-nova, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: .75rem;
+        line-height: 1.75rem;
+    }
+}
+
+@media(max-width:1099px) {
+    .show1 {
+        display: block !important;
+    }
+
+    .showhide1 {
+        display: none !important;
+    }
+}
+
+@media(max-width:1099px) {
+    .show1 {
+        display: block !important;
+    }
+
+    .showhide1 {
+        display: none !important;
+    }
+
+    .card-title {
+        font-size: 1.55rem;
+    }
+
+    .card-text {
+        font-size: .75rem;
+    }
+
+    div.card-number {
+        font-size: 250px;
+        line-height: 300px;
+        font-family: fairplex-wide, serif;
+        font-weight: 900;
+        font-style: normal;
+        position: absolute;
+        top: 50;
+        left: 0;
+        color: rgba(230, 230, 230, .2);
+        transition: color .3s;
+    }
+
+    ul.opm-txt {
+        font-size: .75rem;
+        line-height: 1.25rem;
+    }
+
+}
+
+@media(max-width:500px) {
+    h1 {
+        font-size: 1.45rem;
+        padding: 20px 0;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        padding: 20px 0;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+
+}
+
+/* css animations */
+
+/* bootstrap customizations */
+
+
+/* navigation + footer */
+
+.kgc-footer {
+    padding: 2.5rem 0;
+    text-align: center;
+    color: white;
+    background-color: #011C3A;
+    border-top: 0.5rem solid #e5e5e5;
+}
+
+.kgc-footer a {
+    color: grey;
+}
+
+/* parallax settings */
+.plax {
+    min-height: 50rem;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.secblock {
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.plax-min {
+    height: 450px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.plaxsec {
+    background-image: url("https://www.kierstingray.com/img/kgc/fgh_tree_rect.jpg");
+}
+
+.plaxsec1 {
+    background-image: url("https://www.kierstingray.com/img/kgc/team_opaque.jpg");
+}
+
+.plaxsec2 {
+    background-image: url("https://www.kierstingray.com/img/kgc/time.jpg");
+}
+
+/* lines + breaks + placeholders */
+.line {
+    border-bottom: 3px solid;
+    width: 77px;
+}
+
+.section-break {
+    border-top: 2px solid;
+}
+
+.kgc-dev-wf {
+    background-color: rgba(207, 9, 162, 0.5);
+    border: none;
+    max-width: 40rem;
+    margin: 0.5rem;
+}
+
+.kgc-no-bg {
+    background-color: rgba(245, 245, 245, 0.0);
+    border: none;
+    max-width: 40rem;
+    margin: 0.5rem;
+}
+
+/* text + typography settings */
+p,
+li {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+strong {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1 {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+h2 {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+h3,
+h4,
+h5 {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.kgc-tagline {
+    max-width: 400px;
+    color: white;
+    border: 4px solid white;
+    padding: 15px;
+    margin-left: 50px;
+    position: absolute;
+    top: 25rem;
+}
+
+.kgc-vp {
+    color: white;
+    padding: 4.5rem 1.5rem;
+    min-width: 20rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.display-5 {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 3.15rem;
+}
+
+.thin-txt {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.lite-txt {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.blockout-thin-txt {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: .95rem;
+    line-height: 2.5rem;
+}
+
+.quote {
+    font-family: phoreuscherokee, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.auth {
+    font-family: phoreuscherokee, serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.125;
+}
+
+.opm-txt {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+/* basic colors */
+.black {
+    color: rgb(29, 29, 29);
+}
+
+.white {
+    color: rgb(255, 255, 255);
+}
+
+.opaque-b {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.opaque-w {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+/* colors */
+.c-brick {
+    color: #AF2718;
+}
+
+.c-pumpkin {
+    color: #c45300;
+}
+
+.c-gold {
+    color: #F0A933;
+}
+
+.c-olive {
+    color: #5b8039;
+}
+
+.c-sky {
+    color: #005886;
+}
+
+.c-ocean {
+    color: #001c34;
+}
+
+.c-seafoam {
+    color: #F2F8F8;
+}
+
+.c-plum {
+    color: #600281;
+}
+
+.c-cloud {
+    color: #D1E6F1;
+}
+
+.c-frost {
+    color: #2B2B2C;
+}
+
+.c-metal {
+    color: #272728;
+}
+
+/* background colors */
+.bk-brick {
+    background-color: #AF2718;
+}
+
+.bk-pumpkin {
+    background-color: #c45300;
+}
+
+.bk-gold {
+    background-color: #F0A933;
+}
+
+.bk-olive {
+    background-color: #5b8039;
+}
+
+.bk-sky {
+    background-color: #005886;
+}
+
+.bk-ocean {
+    background-color: #001c34;
+}
+
+.bk-seafoam {
+    background-color: #F2F8F8;
+}
+
+.bk-cloud {
+    background-color: #D1E6F1;
+}
+
+.bk-plum {
+    background-color: #600281;
+}
+
+.bk-frost {
+    background-color: #2B2B2C;
+}
+
+.bk-metal {
+    background-color: #595959;
+}
+
+/* overlay colors */
+.ov-brick {
+    background-color: #AF2718;
+    opacity: 0.4;
+}
+
+.ov-pumpkin {
+    background-color: #c45300;
+    opacity: 0.4;
+}
+
+.ov-gold {
+    background-color: #F0A933;
+    opacity: 0.4;
+}
+
+.ov-olive {
+    background-color: #5b8039;
+    opacity: 0.4;
+}
+
+.ov-sky {
+    background-color: #005886;
+    opacity: 0.4;
+}
+
+.ov-ocean {
+    background-color: #001c34;
+    opacity: 0.4;
+}
+
+.ov-seafoam {
+    background-color: #F2F8F8;
+    opacity: 0.4;
+}
+
+.ov-cloud {
+    background-color: #D1E6F1;
+    opacity: 0.4;
+}
+
+.ov-plum {
+    background-color: #600281;
+    opacity: 0.4;
+}
+
+.ov-frost {
+    background-color: #2B2B2C;
+    opacity: 0.4;
+}
+
+.ov-metal {
+    background-color: #595959;
+    opacity: 0.4;
+}
+
+/* icon + dot colors */
+i.help-dot {
+    color: rgba(36, 133, 200, 1.0);
+}
+
+i.info-dot {
+    color: rgba(89, 89, 89, 1.0);
+}
+
+i.hlite-dot {
+    color: rgba(245, 166, 35, 1.0);
+}
+
+i.stoplight-grn {
+    color: #66AD40;
+}
+
+i.stoplight-yel {
+    color: #f8d31c;
+}
+
+i.stoplight-red {
+    color: #d83721;
+}
+
+i.red-dot {
+    color: rgb(160, 27, 9);
+}
+
+i.dkred-dot {
+    color: rgba(112, 1, 1, 0.7);
+}
+
+i.yellow-dot {
+    color: rgba(226, 190, 15, 0.7);
+}
+
+i.blue-dot {
+    color: rgba(25, 131, 187, 0.7);
+}
+
+i.dkblue-dot {
+    color: rgba(1, 12, 23, 0.7);
+}
+
+i.orange-dot {
+    color: rgba(245, 131, 35, 0.7);
+}
+
+i.green-dot {
+    color: rgba(55, 106, 69, 0.7);
+}
+
+i.purple-dot {
+    color: rgba(114, 13, 177, 0.7);
+}
+
+i.pink-dot {
+    color: rgba(231, 33, 134, 0.7);
+}
+
+i.grey-dot {
+    color: rgba(89, 89, 89, 0.7);
+}
+
+/* card settings */
+.apr-card {
+    padding: 50px 40px 30px 40px;
+    max-height: auto;
+}
+
+.title-card {
+    font-family: fairplex-narrow, serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.eyebrow {
+    font-family: proxima-soft, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.card-number {
+    font-size: 450px;
+    line-height: 300px;
+    font-family: fairplex-wide, serif;
+    font-weight: 900;
+    font-style: normal;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: rgba(230, 230, 230, .2);
+    transition: color .3s;
+}
+
+
+/* carousel settings */
+
+.carousel {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    text-align: center;
+    overflow: hidden;
+    height: 350px;
+}
+
+.carousel-caption {
+    width: 100%;
+    height: 100%;
+    left: 0 !important;
+    padding: 60px 90px;
+    color: #2B2B2C;
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 300px;
+}
+
+.carousel-indicators li,
+.carousel-indicators li.active {
+    width: 11px;
+    height: 11px;
+    margin: 1px 5px;
+    border-radius: 50%;
+}
+
+.carousel-indicators li {
+    background: rgba(175, 39, 24, 0.7);
+    border: none;
+}
+
+.carousel-indicators li.active {
+    background: #AF2718;
+}
+
+/* chart settings */
+.3c-chart-a-sm {
+    width: 225px;
+    text-align: center;
+}
+
+.3c-chart-b-sm {
+    width: 125px;
+    text-align: center;
+}
+
+.3c-chart-c-sm {
+    width: 50px;
+    text-align: center;
+}
